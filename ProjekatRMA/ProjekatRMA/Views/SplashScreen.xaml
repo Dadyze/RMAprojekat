@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjekatRMA.Views.SplashScreen"
+             BackgroundImage ="background.jpg"
+             Title="Homepage"                          
+             >
+    
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Frame BackgroundColor="MediumPurple" CornerRadius="20" Margin="20" HeightRequest="500" Opacity="0.9">
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Image Source="Logo.png" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center"></Image>
+                    <Label Text="Welcome to my Weather App" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="32" Margin="0,0,0,60" TextColor="Black" FontAttributes="Bold"></Label>
+                    <Button Clicked="RegisterBtn" Text="Login" Padding="20,10" HorizontalOptions="Center" WidthRequest="200" TextColor="Purple" BackgroundColor="Transparent" BorderColor="Purple" BorderWidth="2" CornerRadius="20" ></Button>
+                    <Button Clicked ="LoginBtn" Text="Register" Padding="20,10" HorizontalOptions="Center" WidthRequest="200" BackgroundColor="Black" TextColor="White" CornerRadius="20"></Button>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

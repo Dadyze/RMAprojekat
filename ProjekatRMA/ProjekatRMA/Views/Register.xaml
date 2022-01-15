@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjekatRMA.Views.Register"
+             BackgroundImage ="background.jpg"
+             Title="Register"
+             >
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Image Source="Logo.png" HeightRequest="100" WidthRequest="100"></Image>
+                <Label Text="Please Register" FontSize="32" Padding="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                <StackLayout Padding="30" >
+                    <Entry x:Name="username" Placeholder="Enter Username: " TextColor="White" PlaceholderColor="LightGray" FontSize="Large"></Entry>
+                    <Entry x:Name="pass" Placeholder="Enter Password: " TextColor="White" PlaceholderColor="LightGray" FontSize="Large" IsPassword="True"></Entry>
+                </StackLayout>
+                <Button Clicked ="RegisterBtn" Text="Register" Padding="20,10" BackgroundColor="Black" TextColor="White" BorderColor="White" WidthRequest="330" HorizontalOptions="Center" CornerRadius="20"></Button>
+            </StackLayout>
+
+            <Label Text="Already have an account?" FontSize="Small" TextColor="White" HorizontalTextAlignment="Center"></Label>
+            <Button  Clicked="RegisterBtnRediretLogin" TextColor="white" Text="Login now!" Padding="20,10"  WidthRequest="330" HorizontalOptions="Center" Margin="0,10,0,50" BorderColor="White" BorderWidth="1" BackgroundColor="Transparent" CornerRadius="20"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

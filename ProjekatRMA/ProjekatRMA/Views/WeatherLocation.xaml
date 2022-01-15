@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjekatRMA.Views.WeatherLocation"
+             BackgroundImage ="background.jpg"
+             Title="Enter Location"
+             >
+    
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="20">
+                <Label Text="Welcome " FontSize="40" TextColor="White" FontAttributes="Bold"></Label>
+                <Label Text="{Binding LoggedUser.Name}" FontSize="40" TextColor="White" FontAttributes="Bold" ></Label>
+            </StackLayout>
+
+            <Image Source="Logo.png" HeightRequest="100" WidthRequest="100"></Image>
+            <Label Text="Enter Weather Location" FontSize="32" Padding="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="White"></Label>
+            <StackLayout Padding="30" >
+                <Entry x:Name="loc" Placeholder="Enter Location: " TextColor="White" PlaceholderColor="LightGray" FontSize="Large"></Entry>
+            </StackLayout>
+            <Button Clicked ="SubmitLocation" Text="Show Weather" Padding="20,10" BackgroundColor="Black" TextColor="White" BorderColor="White" WidthRequest="330" HorizontalOptions="Center" CornerRadius="20"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
